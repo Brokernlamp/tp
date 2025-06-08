@@ -184,7 +184,7 @@ Avoid generic advice. Be creative, clear, and motivational.
     url = "https://openrouter.ai/api/v1/chat/completions"
 
     payload = {
-        "model": "qwen/qwen3-235b-a22b",
+        "model": "anthropic/claude-sonnet-4",
         "messages": [
             {"role": "system", "content": "You are a professional sports coach giving personalized athlete improvement tips."},
             {"role": "user", "content": prompt}
