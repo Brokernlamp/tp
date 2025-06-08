@@ -184,7 +184,7 @@ Avoid generic advice. Be creative, clear, and motivational.
     url = "https://openrouter.ai/api/v1/chat/completions"
 
     payload = {
-        "model": "DeepSeek: R1 Distill Qwen 7B",
+        "model": "google/gemini-2.5-pro-preview",
         "messages": [
             {"role": "system", "content": "You are a professional sports coach giving personalized athlete improvement tips."},
             {"role": "user", "content": prompt}
