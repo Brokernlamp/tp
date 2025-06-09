@@ -12,6 +12,9 @@ import json
 import time
 import streamlit as st
 
+
+
+
 # Custom CSS for a modern and engaging UI
 st.markdown(
     """
@@ -152,10 +155,13 @@ st.markdown(
 )
 
 # Folder paths
-reaction_time_folder_path = r"Reaction Time"
-agility_folder_path = r"Agility"
-decision_making_folder_path = r"Decision Making"
-stamina_folder_path = r"Stamina"
+from paths import (
+    reaction_time_folder_path,
+    agility_folder_path,
+    decision_making_folder_path,
+    stamina_folder_path
+)
+
 
 # Hugging Face API integration
 def get_ai_recommendations(player_data, metric_type, selected_metric, percentile, comparison_quality):
